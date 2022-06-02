@@ -85,7 +85,21 @@ app.listen(port, () => {
 </code></pre>
 ---
 
-*Resultado:*  
+*Resultados:*  
+- Leer toda la base.  
+![LeerTodo](https://user-images.githubusercontent.com/97483147/171555609-ea17e9f4-92bc-424c-80d1-83bd69826948.gif)   
+
+- Leer una fila de datos.
+![LeerFila](https://user-images.githubusercontent.com/97483147/171556133-1215daa4-72fd-44d6-9e60-ecb03e455b2b.gif)
+
+- Insertar datos.  
+![insertar](https://user-images.githubusercontent.com/97483147/171556648-58f1a978-13c2-41bf-a5a8-8db6c3b963df.gif)
+
+- Modificar datos.  
+![modificar](https://user-images.githubusercontent.com/97483147/171557692-a94d733e-bb2f-4b9d-ab27-890fac1b7f99.gif)   
+
+- Eliminar datos.  
+![eliminar](https://user-images.githubusercontent.com/97483147/171558066-94fff176-d1b9-4b83-97aa-4108ad3c8aef.gif)
 
 ---
 
