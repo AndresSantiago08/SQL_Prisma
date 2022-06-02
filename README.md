@@ -8,7 +8,8 @@ npx prisma init
 </code></pre>
 
 - Crear un modelo en `schema.prisma` para agregar una tabla a una base de datos ya existente en PostgreSQL.  
-<pre><code>model Explorer {
+```js
+model Explorer {
   id Int @id @default(autoincrement())
   name String @unique
   username String @db.VarChar(255)
@@ -17,14 +18,15 @@ npx prisma init
   dateCreated DateTime @default(now())
   lastUpdated DateTime @updatedAt
 }
-</code></pre>
+```
 
 - Versionar la base de datos.
 <pre><code>npx prisma migrate dev --name init
 </code></pre>
 
 - Crear un servidor de Express para leer, insertar, modificar y borar información en la base de datos.
-<pre><code>const express = require('express');
+```js
+const express = require('express');
 const app = express();
 app.use(express.json());
 const port = process.env.PORT || 3000;
@@ -82,7 +84,7 @@ app.delete('/explorers/:id', async (req, res) => {
 app.listen(port, () => {
   console.log(`Listening to requests on port ${port}`);
 });
-</code></pre>
+```
 ---
 
 *Resultados:*  
